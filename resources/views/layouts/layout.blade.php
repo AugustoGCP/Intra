@@ -2,6 +2,10 @@
 <html lang="pt-BR">
     <head>
 
+        <!-- Google AdSense  -->
+
+        <script data-ad-client="ca-pub-1208880418981826" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
         <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('js/functions.js') }}"></script>
         <script src="{{ asset('js/jquery.mask.js') }}"></script>  
