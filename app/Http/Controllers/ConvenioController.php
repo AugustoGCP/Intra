@@ -59,23 +59,32 @@ class ConvenioController extends Controller
 
     public function store(Request $request){ 
 
-        $json = $request->all();
+        // $json = $request->all();
 
-        $data = json_decode($json['data']);
+        // $data = json_decode($json['data']);
+
+        $data = $request->all();
+
+        // return $data;
 
         $convenio = new Convenio;
 
-        $convenio->nome_convenio = $data->nome_convenio;
-        $convenio->rua_convenio = $data->rua_convenio;
-        $convenio->bairro_convenio = $data->bairro_convenio;
-        $convenio->cidade_convenio = $data->cidade_convenio;
+        $convenio->nome_convenio = $data['nome_convenio'];
+        $convenio->rua_convenio = $data['rua_convenio'];
+        $convenio->bairro_convenio = $data['bairro_convenio'];
+        $convenio->cidade_convenio = $data['cidade_convenio'];
         $convenio->criado_por = session('logged');
         $convenio->activated = 1;
+        $convenio->save();
 
-        if( ($convenio->save()) && (TelefoneController::create($data->telefone, $convenio->cod_convenio)))
-            return true;
-        else    
-            return false;
+        TelefoneController::create($data['telefone'], $convenio->cod_convenio);
+
+        return redirect('/dashboard');
+
+        // if( ($convenio->save()) && (TelefoneController::create($data['telefone'], $convenio->cod_convenio)))
+        //     return true;
+        // else    
+        //     return false;
 
     }
 

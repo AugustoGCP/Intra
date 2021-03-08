@@ -69,7 +69,7 @@ function addTelephoneField(id){
 
     let count = $('i').length
 
-    const htmlString = '<div id="telefone'+count+'" class="input-field col s2"><input maxlength="15" id="input-field col s3 icon_telephone" name="telefone" type="tel" class="validate"><a id="remove" class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">remove</i></a><label for="icon_telephone">Telefone</label></div>'
+    const htmlString = '<div id="telefone'+count+'" class="input-field col s2"><input maxlength="15" id="input-field col s3 icon_telephone" name="telefone[]" type="tel" class="validate"><a id="remove" class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">remove</i></a><label for="icon_telephone">Telefone</label></div>'
 
     $(htmlString).appendTo(id)
 

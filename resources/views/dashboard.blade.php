@@ -14,8 +14,9 @@
 
             <div id="cadastro" class="col s12">
                 <div class="row margin-top-2">
-                    <form class="col s12" id="form_cadastro_convenio">
-                        <meta name="csrf-token" content="{{ csrf_token() }}">
+                    <form class="col s12" id="form_cadastro_convenio" method="POST" action="/dashboard/convenio/store">
+                        @csrf  
+                        <!-- <meta name="csrf-token" content="{{ csrf_token() }}"> -->
                         <div class="row">
                             <div class="input-field col s12">
                                 <input id="nome_convenio" name="nome_convenio" type="text" class="validate">
@@ -40,7 +41,7 @@
                             <div id="reference">
                                 <div class="input-field col s2">
                                     <i class="material-icons prefix">phone</i>
-                                    <input id="input-field col s3 icon_telephone" maxlength="15" name="telefone" type="tel" class="validate">
+                                    <input id="input-field col s3 icon_telephone" maxlength="15" name="telefone[]" type="tel" class="validate">
                                     <a id="add" class="btn-floating btn-small waves-effect waves-light green">
                                         <i class="material-icons">add</i>
                                     </a>
@@ -49,9 +50,9 @@
                             </div>                            
                             <div id="insert"></div>
                         </div>                   
-                        <a id="cadastrar_convenio" class="btn waves-effect waves-light" name="action">Cadastrar
+                        <button id="cadastrar_convenio" type="submit" class="btn waves-effect waves-light" name="action">Cadastrar
                             <i class="material-icons right">send</i>
-                        </a>
+                        </button>
                     </form>
                     <!-- <script src="js/telefone.js"></script>                 -->
                 </div>
