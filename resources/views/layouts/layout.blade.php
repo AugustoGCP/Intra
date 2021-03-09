@@ -47,7 +47,6 @@
             </nav>
         </div>
 
-
         <div id="login" class="modal bottom-sheet">
             <div class="modal-content">
                 <div class="container">
