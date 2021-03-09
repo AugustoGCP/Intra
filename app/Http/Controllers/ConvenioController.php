@@ -67,19 +67,7 @@ class ConvenioController extends Controller
 
         // return $data;
 
-        $convenio = new Convenio;
-
-        $convenio->nome_convenio = $data['nome_convenio'];
-        $convenio->rua_convenio = $data['rua_convenio'];
-        $convenio->bairro_convenio = $data['bairro_convenio'];
-        $convenio->cidade_convenio = $data['cidade_convenio'];
-        $convenio->criado_por = session('logged');
-        $convenio->activated = 1;
-        $convenio->save();
-
-        TelefoneController::create($data['telefone'], $convenio->cod_convenio);
-
-        return redirect('/dashboard');
+        
 
         // if( ($convenio->save()) && (TelefoneController::create($data['telefone'], $convenio->cod_convenio)))
         //     return true;
