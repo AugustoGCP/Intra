@@ -10,7 +10,7 @@ use App\Http\Middleware\EnsureTokenIsValid;
 
 Route::get('/', [WebController::class, 'index']);
 
-Route::post('/login', [WebController::class ,'create']);
+Route::post('/login', [WebController::class ,'create'])->middleware('web');
 Route::get('/logout', [WebController::class ,'delete']);
 
 Route::post('/search/convenio/search', [ConvenioController::class, 'search']);
