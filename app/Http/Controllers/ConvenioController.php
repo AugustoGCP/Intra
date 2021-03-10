@@ -76,7 +76,7 @@ class ConvenioController extends Controller
             'gerado_por' => session('logged')
         ]);
 
-        TelefoneController::create($data['telefone'], $convenio->cod_convenio)
+        TelefoneController::create($data['telefone'], $convenio->cod_convenio);
 
         return redirect('/dashboard');
 
