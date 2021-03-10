@@ -69,7 +69,7 @@ class ConvenioController extends Controller
 
         Convenio::create([
             'nome_convenio' => $data['nome_convenio'],
-            'rua_convenio' => $data['crua_convenio'],
+            'rua_convenio' => $data['rua_convenio'],
             'bairro_convenio'=> $data['bairro_convenio'],
             'cidade_convenio' => $data['cidade_convenio'],
             'pertence' => $data['pertence'],
