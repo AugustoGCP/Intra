@@ -31,7 +31,6 @@ class WebController extends Controller
 
             foreach($users as $user){
 
-
                 if(isset($user->cod_usuario)){
                     session(['logged' => $user->cod_usuario, 'name' => $data['usuario']]);
                     return $this->indexDashboard();

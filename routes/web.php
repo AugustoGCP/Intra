@@ -26,7 +26,6 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::post('/dashboard/convenio/find', [ConvenioController::class, 'find']);
     Route::post('/dashboard/convenio/update', [ConvenioController::class, 'update']);
 
-
     Route::post('/dashboard/procedimento/store', [ProcedimentoController::class, 'store']);
     Route::post('/dashboard/procedimento/find', [ProcedimentoController::class, 'find']);
     Route::post('/dashboard/procedimento/edit', [ProcedimentoController::class, 'edit']);
