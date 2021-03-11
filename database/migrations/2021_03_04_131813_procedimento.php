@@ -17,7 +17,7 @@ class Procedimento extends Migration
 
             $table->increments('cod_procedimento');
             $table->string('nome_procedimento');
-            $table->string('cabecalho_procedimento');
+            $table->longText('cabecalho_procedimento');
             $table->json('corpo_procedimento');
             $table->date('data_criacao_procedimento');
             $table->integer('pertence')->unsigned();
