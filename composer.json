@@ -14,7 +14,11 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
-        "ext-memcached": "*"
+        "predis/predis": "1.0.3",
+        "ext-bcmath": "*",
+        "ext-mcrypt": "*",
+        "ext-memcached": "*",
+        "ext-mongodb": "^1.1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
