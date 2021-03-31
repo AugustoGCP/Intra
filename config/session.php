@@ -198,4 +198,26 @@ return [
 
     'same_site' => 'lax',
 
+    'redis' => [
+
+        'client' => env('REDIS_CLIENT', 'phpredis'),
+    
+        'default' => [
+            'host' => env('REDIS_HOST', 'ec2-18-204-153-155.compute-1.amazonaws.com'),
+            'password' => env('REDIS_PASSWORD', 'p47a624df3c28d31d2421b744e791e78ddad3cc9d61f111841f585da8ce57e998'),
+            'port' => env('REDIS_PORT', 29770),
+            'database' => env('REDIS_DB', 0),
+            'url' => 'redis://:p47a624df3c28d31d2421b744e791e78ddad3cc9d61f111841f585da8ce57e998@ec2-18-204-153-155.compute-1.amazonaws.com:29770',
+        ],
+    
+        'cache' => [
+            'host' => env('REDIS_HOST', 'ec2-18-204-153-155.compute-1.amazonaws.com'),
+            'password' => env('REDIS_PASSWORD', 'p47a624df3c28d31d2421b744e791e78ddad3cc9d61f111841f585da8ce57e998'),
+            'port' => env('REDIS_PORT', 29770),
+            'database' => env('REDIS_CACHE_DB', 1),
+            'url' => 'redis://:p47a624df3c28d31d2421b744e791e78ddad3cc9d61f111841f585da8ce57e998@ec2-18-204-153-155.compute-1.amazonaws.com:29770',
+        ],
+    
+    ],
+
 ];
