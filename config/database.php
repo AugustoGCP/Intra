@@ -117,6 +117,31 @@ return [
     |
     */
 
-   
+    'redis' => [
+
+        'client' => env('REDIS_CLIENT', 'predis'),
+
+        'options' => [
+            'cluster' => env('REDIS_CLUSTER', 'redis'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+        ],
+
+        'default' => [
+            'url' => env('REDIS_URL'),
+            'host' => env('REDIS_HOST', 'ec2-18-205-8-92.compute-1.amazonaws.com'),
+            'password' => env('REDIS_PASSWORD', 'pad9d68d8a6570e622d2ade1348cfdbe732e88bafd701dea4552a51af7ade4bcf'),
+            'port' => env('REDIS_PORT', '24000'),
+            'database' => env('REDIS_DB', '0'),
+        ],
+
+        'cache' => [
+            'url' => env('REDIS_URL'),
+            'host' => env('REDIS_HOST', 'ec2-18-205-8-92.compute-1.amazonaws.com'),
+            'password' => env('REDIS_PASSWORD', 'pad9d68d8a6570e622d2ade1348cfdbe732e88bafd701dea4552a51af7ade4bcf'),
+            'port' => env('REDIS_PORT', '24000'),
+            'database' => env('REDIS_CACHE_DB', '1'),
+        ],
+
+    ],
 
 ];

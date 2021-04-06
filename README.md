@@ -1,9 +1,9 @@
-<p align="center"><h1>IntraLists<h1></p>
+#IntraLists
 
 
-## About Laravel
+## About IntraLists
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Intralists is a web application to help people, companies, business storing information about the internal processes. With a easier design
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
