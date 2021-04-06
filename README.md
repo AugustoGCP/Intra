@@ -1,4 +1,4 @@
-<p align="center">IntraLists</p>
+<p align="center"><h1>IntraLists<h1></p>
 
 
 ## About Laravel
