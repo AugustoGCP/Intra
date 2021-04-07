@@ -129,8 +129,8 @@ class ConvenioController extends Controller
         else
             $search = $data['dados'];
 
-        $convenios = Convenio::where('nome_convenio','like', $search.'%')
-        ->orderBy('nome_convenio')
+        $convenios = Convenio::where('nome_convenio','like', '%'.$search.'%')
+        ->orderBy('nome_convenio', 'asc')
         ->get(); 
 
         // $array = [];
