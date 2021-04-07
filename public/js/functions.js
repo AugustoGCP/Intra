@@ -34,7 +34,7 @@ function search(dados){
                 
                 for(var a=0;a<result[i].length;a++){
 
-                    const cardFull = '<div class="col s12 m7 margin-bottom-2"><div class="card horizontal"><div class="card-image"><img class="activator" src="https://picsum.photos/id/1043/150/250"></div><div class="card-stacked"><div class="card-content"><span class="card-title activator grey-text text-darken-4">'+result[i][a]['nome_convenio']+'</span><a href="/procedimento/'+result[i][a]['cod_convenio']+'/'+result[i][a]['cod_procedimento']+'" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a><p class="margin-bottom">'+result[i][a]['cabecalho_procedimento']+'</p><p id="telefones">Telefones: </p></div></div></div></div>'
+                    const cardFull = '<div class="col s12 m7 margin-bottom-2"><div class="card horizontal"><div class="card-image"><img class="activator" src="https://picsum.photos/id/1043/125/225"></div><div class="card-stacked"><div class="card-content"><span class="card-title activator grey-text text-darken-4">'+result[i][a]['nome_convenio']+'</span><a href="/procedimento/'+result[i][a]['cod_convenio']+'/'+result[i][a]['cod_procedimento']+'" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a><p class="margin-bottom">'+result[i][a]['cabecalho_procedimento']+'</p><p id="telefones">Telefones: </p></div></div></div></div>'
 
                     //Utilize este console.log para verificar se o array
                     //está sendo preecnhido corretamente com os telefones.
