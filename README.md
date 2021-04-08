@@ -7,7 +7,7 @@ Intralists is a web application to help people, companies, business storing info
 
 ##Images
 
-![Git Pictures](/public/screenIntra/inicio.png)
+![Git Pictures](/public/screenIntra/Inicio.png)
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
