@@ -5,6 +5,10 @@
 
 Intralists is a web application to help people, companies, business storing information about the internal processes. With a easier design
 
+##Images
+
+![Git Pictures](/public/screenIntra/inicio.png)
+
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
 - Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
