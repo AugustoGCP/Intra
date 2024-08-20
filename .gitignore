@@ -5,7 +5,7 @@
 /vendor
 /app/bootstrap/cache/packages.php
 /app/bootstrap/cache/services.php
-# /storage/logs
+/storage/logs
 .env
 .env.backup
 .phpunit.result.cache
