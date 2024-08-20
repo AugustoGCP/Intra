@@ -5,21 +5,93 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-### Added
-### Changed
-### Deprecated
-### Removed
-### Fixed
-### Security
+## 2.0.0 - 2022-12-31
 
-## [1.1.1] - 2020-09-10
+### Added
+
+* Add support for `CollectionInterface::reduce()` ([#87](https://github.com/ramsey/collection/pull/87))
+* All exceptions now implement a base `CollectionException` interface
+* Introduce `Sort` enum
+* Support `column()`, `sort()`, and `where()` on non-object collection types
+
+### Changed
+
+* Minimum PHP version supported is 8.1
+* Every method now has parameter and return type hints; if extending classes or
+  implementing interfaces, you may need to change method signatures to upgrade
+* The second parameter of `CollectionInterface::sort()` now uses the new `Sort`
+  enum instead of a string
+* Audit all template annotations and clean up Psalm and PHPStan types for
+  correctness; if using static analysis in projects, this may require changes to
+  your type annotations
+* `ArrayInterface` no longer extends `\Serializable`, and the `serialize()` and
+  `unserialize()` methods have been removed from `AbstractArray`; however,
+  `AbstractArray` still supports serialization through implementing `__serialize()`
+  and `__unserialize()`
+
+## 1.3.0 - 2022-12-27
+
+### Fixed
+
+* Make type aliases compatible in diff, intersect, and merge ([#111](https://github.com/ramsey/collection/pull/111))
+* Use `offsetUnset()` method to remove from the collection in `AbstractCollection` ([#104](https://github.com/ramsey/collection/pull/104))
+* Use the correct base type of `array-key` for template `K` on `AbstractTypedMap`
+
+### Changed
+
+* Minimum PHP version supported is 7.4
+
+## 1.2.2 - 2021-10-10
+
+### Fixed
+
+* Merging of sets now excludes duplicates, since a set does not allow duplicate
+  values.
+
+## 1.2.1 - 2021-08-05
+
+### Fixed
+
+* Standardize template annotations and fix iterable types
+
+## 1.2.0 - 2021-08-05
+
+### Added
+
+* Support PHP 8.1.0
+
+### Changed
+
+* Minimum PHP version supported is 7.3
+
+## 1.1.4 - 2021-07-29
+
+### Fixed
+
+* Add `Traversable<T>` return type to `getIterator()`.
+
+## 1.1.3 - 2021-01-21
+
+### Fixed
+
+* Fixed incorrect callable type annotation on `CollectionInterface::map()`.
+
+## 1.1.2 - 2021-01-20
+
+### Fixed
+
+* Fixed [Psalm](https://psalm.dev) annotations causing Psalm errors in
+  downstream projects.
+* Fixed `AbstractCollection::column()` attempting to access a property or method
+  on a non-object.
+
+## 1.1.1 - 2020-09-10
 
 ### Fixed
 
 * Fixed broken `AbstractCollection::map()` implementation.
 
-## [1.1.0] - 2020-08-10
+## 1.1.0 - 2020-08-10
 
 ### Fixed
 
@@ -29,14 +101,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   returning inconsistent results when used on collections containing objects.
 * Removed warning about deprecated dependency when running `composer install`
 
-## [1.0.1] - 2020-01-04
+## 1.0.1 - 2020-01-04
 
 ### Fixed
 
 * Fixed `AbstractCollection::offsetSet()` so that it uses the provided `$offset`
   when setting `$value` in the array.
 
-## [1.0.0] - 2018-12-31
+## 1.0.0 - 2018-12-31
 
 ### Added
 
@@ -74,7 +146,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Fixed possible exploit using `AbstractArray::unserialize()`
   (see [#47](https://github.com/ramsey/collection/issues/47)).
 
-## [0.3.0] - 2016-05-23
+## 0.3.0 - 2016-05-23
 
 ### Added
 
@@ -92,29 +164,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Improve error messages in exceptions when `Collection` and `NamedParameterMap`
   items fail type checks.
 
-## [0.2.1] - 2016-02-22
+## 0.2.1 - 2016-02-22
 
 ### Fixed
 
 * Allow non-strict checking of values in typed collections.
 
-## [0.2.0] - 2016-02-05
+## 0.2.0 - 2016-02-05
 
 ### Added
 
 * Support typed collections.
 
-## [0.1.0] - 2015-10-27
+## 0.1.0 - 2015-10-27
 
 ### Added
 
 * Support generic arrays and maps.
-
-[Unreleased]: https://github.com/ramsey/collection/compare/1.1.0...HEAD
-[1.1.0]: https://github.com/ramsey/collection/compare/1.0.1...1.1.0
-[1.0.1]: https://github.com/ramsey/collection/compare/1.0.0...1.0.1
-[1.0.0]: https://github.com/ramsey/collection/compare/0.3.0...1.0.0
-[0.3.0]: https://github.com/ramsey/collection/compare/0.2.1...0.3.0
-[0.2.1]: https://github.com/ramsey/collection/compare/0.2.0...0.2.1
-[0.2.0]: https://github.com/ramsey/collection/compare/0.1.0...0.2.0
-[0.1.0]: https://github.com/ramsey/collection/commits/0.1.0
