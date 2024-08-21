@@ -142,8 +142,10 @@
                             </div>
                         </div>                            
                         <div id="insert_edit"></div> 
-                        <script src="{{ asset('js/searchConvenio.js') }}"></script>
-                        <script src="{{ asset('js/telefone.js') }}"></script>                
+                        <!-- <script src="{{ asset('js/searchConvenio.js') }}"></script> -->
+                        <script src="https://intralists-3b50511eef8f.herokuapp.com/js/searchConvenio.js"></script>
+                        <!-- <script src="{{ asset('js/telefone.js') }}"></script>       -->
+                        <script src="https://intralists-3b50511eef8f.herokuapp.com/js/telefone.js"></script>          
                     </div> 
                     <div class="divider"></div>
                         <p>
