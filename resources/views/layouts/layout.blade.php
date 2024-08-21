@@ -6,7 +6,8 @@
 
         <script data-ad-client="ca-pub-1208880418981826" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-        <script src="{{ asset('js/jquery.js') }}"></script>
+        <!-- <script src="{{ asset('js/jquery.js') }}"></script> -->
+        <script rel="stylesheet" href="https://intralists-3b50511eef8f.herokuapp.com/js/jquery.js"></script>
         <script src="{{ asset('js/functions.js') }}"></script>
         <script src="{{ asset('js/jquery.mask.js') }}"></script>  
         <script src="{{ asset('js/materialize.min.js') }}"></script> 
@@ -23,7 +24,8 @@
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified CSS MATERIALIZE -->
-        <link rel="stylesheet" href=" {{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="https://intralists-3b50511eef8f.herokuapp.com/css/style.css">
+        <!-- <link rel="stylesheet" href=" {{ asset('css/style.css') }}"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
         <!-- Compiled and minified JavaScript MATERIALIZE -->
