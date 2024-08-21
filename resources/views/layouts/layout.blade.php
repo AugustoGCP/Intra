@@ -8,11 +8,14 @@
 
         <!-- <script src="{{ asset('js/jquery.js') }}"></script> -->
         <script rel="stylesheet" href="https://intralists-3b50511eef8f.herokuapp.com/js/jquery.js"></script>
-        <script src="{{ asset('js/functions.js') }}"></script>
-        <script src="{{ asset('js/jquery.mask.js') }}"></script>  
-        <script src="{{ asset('js/materialize.min.js') }}"></script> 
+        <!-- <script src="{{ asset('js/functions.js') }}"></script> -->
+        <script rel="stylesheet" href="https://intralists-3b50511eef8f.herokuapp.com/js/jquery.js"></script>
+        <!-- <script src="{{ asset('js/jquery.mask.js') }}"></script>   -->
+        <script rel="stylesheet" href="https://intralists-3b50511eef8f.herokuapp.com/js/jquery.mask.js"></script>
+        <!-- <script src="{{ asset('js/materialize.min.js') }}"></script>  -->
         <!-- <script src="{{ asset('js/saveConvenio.js') }}"></script>  -->
-        <script src="{{ asset('js/jquery.serializeObject.js') }}"></script>  
+        <!-- <script src="{{ asset('js/jquery.serializeObject.js') }}"></script>   -->
+        <script rel="stylesheet" href="https://intralists-3b50511eef8f.herokuapp.com/js/jquery.serializeObject.js"></script>
               
         
         
