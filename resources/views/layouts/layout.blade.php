@@ -13,6 +13,7 @@
         <!-- <script src="{{ asset('js/jquery.mask.js') }}"></script>   -->
         <script src="https://intralists-3b50511eef8f.herokuapp.com/js/jquery.mask.js"></script>
         <!-- <script src="{{ asset('js/materialize.min.js') }}"></script>  -->
+        <script src="https://intralists-3b50511eef8f.herokuapp.com/js/materialize.min.js"></script>
         <!-- <script src="{{ asset('js/saveConvenio.js') }}"></script>  -->
         <!-- <script src="{{ asset('js/jquery.serializeObject.js') }}"></script>   -->
         <script src="https://intralists-3b50511eef8f.herokuapp.com/js/jquery.serializeObject.js"></script>
