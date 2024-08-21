@@ -11,6 +11,10 @@ class TrustHosts extends Middleware
      *
      * @return array
      */
+
+    protected $proxies = '*'; // ou null para detectar automaticamente
+    protected $headers = Request::HEADER_X_FORWARDED_ALL;
+    
     public function hosts()
     {
         return [
