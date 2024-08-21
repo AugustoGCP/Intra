@@ -216,9 +216,12 @@
                         <i class="material-icons right">send</i>
                     </button>
                 </form>
-                <script src="{{ asset('js/searchProcedimento.js') }}"></script>
-                <script src="{{ asset('js/searchStructProcedimento.js') }}"></script>
-                <script src="{{ asset('js/form.js') }}"></script>
+                <!-- <script src="{{ asset('js/searchProcedimento.js') }}"></script> -->
+                <script src="https://intralists-3b50511eef8f.herokuapp.com/js/searchProcedimento.js"></script>
+                <!-- <script src="{{ asset('js/searchStructProcedimento.js') }}"></script> -->
+                <script src="https://intralists-3b50511eef8f.herokuapp.com/js/searchStructProcedimento.js"></script>
+                <!-- <script src="{{ asset('js/form.js') }}"></script> -->
+                <script src="https://intralists-3b50511eef8f.herokuapp.com/js/form.js"></script>
             </div>
         </div>
     </div>    

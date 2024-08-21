@@ -46,7 +46,8 @@
             <li class="waves-effect"><a href="#!">Z</a></li>
         </ul> 
            
-        <script src="js/searchByLetter.js"></script>   
+        <!-- <script src="js/searchByLetter.js"></script>    -->
+        <script src="https://intralists-3b50511eef8f.herokuapp.com/js/searchByLetter.js"></script>
 
         <div class="container" id="cards">
             <div class="margin-top-2 loading"></div>
