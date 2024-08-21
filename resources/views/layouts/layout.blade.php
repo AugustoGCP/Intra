@@ -103,7 +103,8 @@
         @yield('tabs')
         @yield('procedimento')
 
-        <script src="{{ asset('js/search.js') }}"></script>
+        <!-- <script src="{{ asset('js/search.js') }}"></script> -->
+        <script src="https://intralists-3b50511eef8f.herokuapp.com/js/search.js"></script>
 
         
         <script>
